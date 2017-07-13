@@ -1070,7 +1070,7 @@ PlainSocketImpl_socketSendUrgentData(JNIEnv *env, jobject this,
     }
 }
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
   NATIVE_METHOD(PlainSocketImpl, socketSendUrgentData, "(I)V"),
   NATIVE_METHOD(PlainSocketImpl, socketGetOption, "(ILjava/lang/Object;)I"),
   NATIVE_METHOD(PlainSocketImpl, socketSetOption, "(IZLjava/lang/Object;)V"),

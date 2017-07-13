@@ -425,7 +425,7 @@ Inet6AddressImpl_isReachable0(JNIEnv *env, jobject this,
 #endif /* AF_INET6 */
 }
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
   NATIVE_METHOD(Inet6AddressImpl, isReachable0, "([BII[BII)Z"),
   NATIVE_METHOD(Inet6AddressImpl, getHostByAddr0, "([B)Ljava/lang/String;"),
 };

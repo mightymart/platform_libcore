@@ -577,7 +577,7 @@ static jboolean NativeBN_BN_is_prime_ex(JNIEnv* env, jclass, jlong p, int ncheck
   return BN_is_prime_ex(toBigNum(p), nchecks, ctx.get(), reinterpret_cast<BN_GENCB*>(cb));
 }
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
    NATIVE_METHOD(NativeBN, BN_add, "(JJJ)V"),
    NATIVE_METHOD(NativeBN, BN_add_word, "(JI)V"),
    NATIVE_METHOD(NativeBN, BN_bin2bn, "([BIZJ)V"),
