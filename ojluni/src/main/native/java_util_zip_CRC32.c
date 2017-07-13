@@ -62,7 +62,7 @@ JNIEXPORT jint ZIP_CRC32(jint crc, const jbyte *buf, jint len)
     return crc32(crc, (Bytef*)buf, len);
 }
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
   NATIVE_METHOD(CRC32, update, "(II)I"),
   NATIVE_METHOD(CRC32, updateBytes, "(I[BII)I"),
 };

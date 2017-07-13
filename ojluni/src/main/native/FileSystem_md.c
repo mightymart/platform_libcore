@@ -37,7 +37,7 @@ FileSystem_getFileSystem(JNIEnv *env, jclass ignored)
 }
 
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
   NATIVE_METHOD(FileSystem, getFileSystem, "()Ljava/io/FileSystem;"),
 };
 

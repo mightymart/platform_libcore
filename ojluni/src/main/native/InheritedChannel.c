@@ -165,7 +165,7 @@ Java_sun_nio_ch_InheritedChannel_close0(JNIEnv *env, jclass cla, jint fd)
     }
 }
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
   NATIVE_METHOD(InheritedChannel, dup, "(I)I"),
   NATIVE_METHOD(InheritedChannel, dup2, "(II)V"),
   NATIVE_METHOD(InheritedChannel, open0, "(Ljava/lang/String;I)I"),

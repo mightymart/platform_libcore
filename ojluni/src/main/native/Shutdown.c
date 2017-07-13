@@ -53,7 +53,7 @@ Shutdown_runAllFinalizers(JNIEnv *env, jclass ignored)
     }
 }
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
   NATIVE_METHOD(Shutdown, halt0, "(I)V"),
   NATIVE_METHOD(Shutdown, runAllFinalizers, "()V"),
 };

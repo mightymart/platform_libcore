@@ -1062,7 +1062,7 @@ static int getFlags(int sock, const char *ifname, int *flags) {
   return 0;
 }
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
   NATIVE_METHOD(NetworkInterface, getMTU0, "(Ljava/lang/String;I)I"),
   NATIVE_METHOD(NetworkInterface, supportsMulticast0, "(Ljava/lang/String;I)Z"),
   NATIVE_METHOD(NetworkInterface, isLoopback0, "(Ljava/lang/String;I)Z"),

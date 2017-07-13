@@ -62,7 +62,7 @@ DatagramPacket_init (JNIEnv *env, jclass cls) {
     CHECK_NULL(dp_bufLengthID);
 }
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
   NATIVE_METHOD(DatagramPacket, init, "()V"),
 };
 
