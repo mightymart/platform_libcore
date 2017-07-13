@@ -28,7 +28,7 @@ static void NativeTestTarget_emptyJniStaticMethod6L(JNIEnv*, jclass, jobject, ja
 static void NativeTestTarget_emptyJniStaticSynchronizedMethod0(JNIEnv*, jclass) { }
 static void NativeTestTarget_emptyJniSynchronizedMethod0(JNIEnv*, jclass) { }
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
     NATIVE_METHOD(NativeTestTarget, emptyJniMethod0, "()V"),
     NATIVE_METHOD(NativeTestTarget, emptyJniMethod6, "(IIIIII)V"),
     NATIVE_METHOD(NativeTestTarget, emptyJniMethod6L, "(Ljava/lang/String;[Ljava/lang/String;[[ILjava/lang/Object;[Ljava/lang/Object;[[[[Ljava/lang/Object;)V"),

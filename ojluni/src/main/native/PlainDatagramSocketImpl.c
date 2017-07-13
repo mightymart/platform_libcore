@@ -1967,7 +1967,7 @@ PlainDatagramSocketImpl_leave(JNIEnv *env, jobject this,
     mcast_join_leave(env, this, iaObj, niObj, JNI_FALSE);
 }
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
   NATIVE_METHOD(PlainDatagramSocketImpl, leave, "(Ljava/net/InetAddress;Ljava/net/NetworkInterface;)V"),
   NATIVE_METHOD(PlainDatagramSocketImpl, join, "(Ljava/net/InetAddress;Ljava/net/NetworkInterface;)V"),
   NATIVE_METHOD(PlainDatagramSocketImpl, getTimeToLive, "()I"),

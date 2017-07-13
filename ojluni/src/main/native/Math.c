@@ -144,7 +144,7 @@ Math_rint(JNIEnv *env, jclass unused, jdouble d) {
     return rint(d);
 }
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
   NATIVE_METHOD(Math, IEEEremainder, "!(DD)D"),
   NATIVE_METHOD(Math, acos, "!(D)D"),
   NATIVE_METHOD(Math, asin, "!(D)D"),

@@ -207,7 +207,7 @@ static void Matcher_useTransparentBoundsImpl(JNIEnv* env, jclass, jlong addr, jb
     matcher->useTransparentBounds(value);
 }
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
     NATIVE_METHOD(Matcher, findImpl, "(JLjava/lang/String;I[I)Z"),
     NATIVE_METHOD(Matcher, findNextImpl, "(JLjava/lang/String;[I)Z"),
     NATIVE_METHOD(Matcher, getNativeFinalizer, "()J"),
