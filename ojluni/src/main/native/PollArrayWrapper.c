@@ -106,7 +106,7 @@ Java_sun_nio_ch_PollArrayWrapper_interrupt(JNIEnv *env, jobject this, jint fd)
 }
 
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
   NATIVE_METHOD(PollArrayWrapper, poll0, "(JIJ)I"),
   NATIVE_METHOD(PollArrayWrapper, interrupt, "(I)V"),
 };

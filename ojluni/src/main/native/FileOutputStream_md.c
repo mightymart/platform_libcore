@@ -58,7 +58,7 @@ FileOutputStream_open(JNIEnv *env, jobject this,
              O_WRONLY | O_CREAT | (append ? O_APPEND : O_TRUNC));
 }
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
   NATIVE_METHOD(FileOutputStream, open, "(Ljava/lang/String;Z)V"),
 };
 
