@@ -140,7 +140,7 @@ static jstring TimeZoneNames_getExemplarLocation(JNIEnv* env, jclass, jstring ja
   return env->NewString(s.getBuffer(), s.length());
 }
 
-static JNINativeMethod gMethods[] = {
+static const JNINativeMethod gMethods[] = {
   NATIVE_METHOD(TimeZoneNames, fillZoneStrings, "(Ljava/lang/String;[[Ljava/lang/String;)V"),
   NATIVE_METHOD(TimeZoneNames, getExemplarLocation, "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"),
 };
